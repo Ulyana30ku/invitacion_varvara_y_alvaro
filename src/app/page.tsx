@@ -93,9 +93,9 @@ export default function Home() {
       <div className={styles.invited}>
         <div className={styles.invitedTitle}>Estas invitado/a</div>
         <div className={styles.invitedText}>
-          Por favor, ten en cuenta que el tema de nuestro baby shower es&nbsp;<b>bosque </b>.<br />
-          Animamos a todos los invitados a vestirse con colores acorde con la temática y a llevar consigo su toque creativo.
-        </div>
+  ¡Nos encantaría contar con tu presencia en este día tan especial para nuestra familia!<br />
+  Ven con muchas ganas de celebrar y compartir momentos inolvidables juntos.
+</div>
       </div>
       <div className={styles.confirmBg}>
         <div className={styles.confirmBox}>
@@ -111,6 +111,15 @@ export default function Home() {
           </button>
         </div>
       </div>
+
+      <a
+        href="https://sinenvolturas.com/varvarayalvaro"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.sinenBtn}
+      >
+       Pasar a ver la lista de regalos
+      </a>
 
       <footer className={styles.footerCustom}>
         <div className={styles.footerLogoBox}>

@@ -828,20 +828,20 @@ a.secondary {
   }
 }
 .sinenBtn {
-  display: inline-block;
-  margin: 40px auto 0 auto;
-  padding: 18px 36px;
-  background: linear-gradient(90deg, #f7e8a4 0%, #d48eb2 100%);
-  color: #555721;
+  display: block;
+  margin: 96px auto 96px auto; /* 48px сверху и снизу, auto по бокам */
+  padding: 10px 24px;
+  background: #fff;
+  color: #808430;
   font-family: 'Paytone One', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
-  border: none;
-  border-radius: 40px;
-  box-shadow: 0 4px 18px rgba(212, 142, 178, 0.18);
+  border: 2px solid #808430;
+  border-radius: 32px;
+  box-shadow: 0 2px 8px rgba(128, 132, 48, 0.10);
   text-align: center;
   text-decoration: none;
-  transition: background 0.2s, color 0.2s, transform 0.15s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s;
   cursor: pointer;
   letter-spacing: 1px;
   outline: none;
@@ -849,15 +849,26 @@ a.secondary {
 }
 
 .sinenBtn:hover, .sinenBtn:focus {
-  background: linear-gradient(90deg, #d48eb2 0%, #f7e8a4 100%);
+  background: #F6FFD6;
   color: #6D7627;
+  border-color: #6D7627;
   transform: scale(1.04);
-  box-shadow: 0 6px 24px rgba(212, 142, 178, 0.28);
+  box-shadow: 0 6px 24px rgba(128, 132, 48, 0.18);
 }
 
 @keyframes sinenPulse {
-  0% { box-shadow: 0 0 0 0 rgba(212, 142, 178, 0.18); }
-  100% { box-shadow: 0 0 16px 8px rgba(212, 142, 178, 0.13); }
+  0% { box-shadow: 0 0 0 0 rgba(128, 132, 48, 0.10); }
+  100% { box-shadow: 0 0 16px 8px rgba(128, 132, 48, 0.13); }
+}
+@keyframes sinenBlink {
+  0%, 100% {
+    opacity: 1;
+    filter: none;
+  }
+  50% {
+    opacity: 0.2;
+    filter: none;
+  }
 }
 
 .footerCustom {
