@@ -1169,3 +1169,9 @@ a.secondary {
     width: 100%;
   }
 }
+
+.formInput::placeholder,
+.formTextarea::placeholder {
+  color: #aaa;
+  opacity: 1;
+}
