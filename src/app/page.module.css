@@ -1173,12 +1173,41 @@ a.secondary {
 
 .formInput::placeholder,
 .formTextarea {
-  padding: 12px 16px;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  background: white;
-  color: #555721; /* <-- вот это ключевое! */
-  transition: border-color 0.2s;
+  color: #555721 !important;
+  background: #fff !important;
+}
+
+/* Для placeholder на всех мобильных браузерах */
+.formInput::placeholder,
+.formTextarea::placeholder {
+  color: #aaa !important;
+  opacity: 1 !important;
+}
+
+/* Для Safari iOS */
+.formInput::-webkit-input-placeholder,
+.formTextarea::-webkit-input-placeholder {
+  color: #aaa !important;
+  opacity: 1 !important;
+}
+
+/* Для Firefox */
+.formInput::-moz-placeholder,
+.formTextarea::-moz-placeholder {
+  color: #aaa !important;
+  opacity: 1 !important;
+}
+
+/* Для Internet Explorer/Edge */
+.formInput:-ms-input-placeholder,
+.formTextarea:-ms-input-placeholder {
+  color: #aaa !important;
+  opacity: 1 !important;
+}
+
+/* Для старых версий Edge */
+.formInput::-ms-input-placeholder,
+.formTextarea::-ms-input-placeholder {
+  color: #aaa !important;
+  opacity: 1 !important;
 }
