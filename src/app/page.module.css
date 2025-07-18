@@ -1077,6 +1077,7 @@ a.secondary {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   background: white;
+  color: #555721;
   transition: border-color 0.2s;
 }
 
@@ -1172,6 +1173,5 @@ a.secondary {
 
 .formInput::placeholder,
 .formTextarea::placeholder {
-  color: #aaa;
-  opacity: 1;
+  color: #6D7627;
 }
